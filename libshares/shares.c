@@ -1115,9 +1115,10 @@ shares_free_share_info_list (GSList *list)
 	GSList *l;
 
 	for (l = list; l; l = l->next) {
+        /* This was not used...
 		ShareInfo *info;
-
 		info = l->data;
+        */
 		shares_free_share_info (l->data);
 	}
 
